@@ -6,65 +6,83 @@
     <title>Portfólio de Gabriel Santos de Macedo</title>
     
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f4f7f6;
+            background-color: #f0f2f5;
             color: #333;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 960px;
             margin: 40px auto;
-            padding: 20px;
+            padding: 30px;
             background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #0056b3;
+            margin-bottom: 15px;
         }
 
         h1, h2, h3 {
             color: #0056b3;
-            border-bottom: 2px solid #e9ecef;
-            padding-bottom: 10px;
         }
 
         h1 {
-            font-size: 2.5em;
-            text-align: center;
-            border-bottom: none;
+            font-size: 2.8em;
+            margin: 0;
         }
-        
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
         h3 {
-            font-size: 1.2em;
+            font-size: 1.3em;
+            color: #004085;
         }
 
-        p, li {
-            font-size: 1.1em;
+        a {
+            color: #0056b3;
+            text-decoration: none;
         }
-
-        hr {
-            border: 0;
-            height: 1px;
-            background-color: #e9ecef;
-            margin: 30px 0;
+        a:hover {
+            text-decoration: underline;
         }
         
-        strong {
-            color: #004085;
+        .section {
+            margin-bottom: 30px;
         }
 
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             max-width: 100%;
             background: #000;
             margin-top: 20px;
+            border-radius: 8px;
         }
 
         .video-container iframe {
@@ -75,88 +93,100 @@
             height: 100%;
         }
         
-        .slide-link {
+        .button {
             display: inline-block;
             background-color: #0056b3;
             color: #ffffff;
-            padding: 10px 20px;
-            text-decoration: none;
+            padding: 12px 25px;
             border-radius: 5px;
             font-weight: bold;
             margin-top: 10px;
         }
-        .slide-link:hover {
+        .button:hover {
             background-color: #004085;
+            text-decoration: none;
+        }
+        
+        blockquote {
+            border-left: 5px solid #e9ecef;
+            padding-left: 20px;
+            margin-left: 0;
+            font-style: italic;
+            color: #6c757d;
         }
 
     </style>
-    </head>
+</head>
 <body>
 
     <div class="container">
 
-        <h1>Gabriel Santos de Macedo</h1>
-        <p style="text-align: center; font-size: 1.2em; margin-top: -10px;">Estudante de Análise e Desenvolvimento de Sistemas</p>
+        <div class="header section">
+            <img src="foto-perfil.jpg" alt="Foto de Gabriel Santos de Macedo" class="profile-pic">
+            <h1>Gabriel Santos de Macedo</h1>
+            <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+        </div>
         
-        <hr>
-
-        <h2>Apresentação em Vídeo (YouTube)</h2>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/y2pRpyynwDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="section">
+            <h2>Apresentação (YouTube)</h2>
+            <p>Uma breve apresentação sobre mim e este portfólio, conforme solicitado no desafio do Bootcamp. [cite: 125]</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/y2pRpyynwDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Sobre Mim</h2>
+            <p>
+                Estudo Análise e Desenvolvimento de Sistemas (ADS) no CEUB. [cite: 77] Minha jornada na tecnologia começou com a curiosidade, que hoje se transformou em paixão. Estou focado em absorver o máximo de conhecimento para ter minhas primeiras impressões reais do mercado e encontrar meu lugar na área.
+            </p>
         </div>
 
-        <hr>
-        
-        <h2>Sobre Mim</h2>
-        <p>
-            Estudo Análise e Desenvolvimento de Sistemas (ADS) no CEUB. Estou começando a curtir e a entender o básico 
-            com o foco de melhorar e ter minhas primeiras impressões sobre o mercado da área. Busco aplicar meus conhecimentos
-            e aprender continuamente.
-        </p>
+        <div class="section">
+            <h2>Habilidades e Competências</h2>
+            <p>Para uma apresentação visual das minhas principais competências, acesse a apresentação de slides que criei, conforme a orientação do desafio. [cite: 104, 119]</p>
+            <a href="https://www.canva.com/design/DAG0Y6eLryM/adeV_VaCEf2Qg4N8ddTQYw/view" class="button" target="_blank">Ver Apresentação de Habilidades</a>
+        </div>
 
-        <h2>Projetos</h2>
-        <h3>Meu Portfólio Digital (portfolioHUB)</h3>
-        <p>
-            Criação de uma página web profissional para apresentar minhas habilidades e trajetória acadêmica. 
-            Este site foi desenvolvido com HTML e CSS como parte do desafio do Bootcamp I 2025 do CEUB.
-        </p>
+        <div class="section">
+            <h2>Projetos</h2>
+            <h3>Meu Portfólio Digital (portfolioHUB)</h3>
+            <p>
+                Criação desta página web profissional para apresentar minhas habilidades e trajetória acadêmica. [cite: 84] Este site foi desenvolvido com HTML e CSS como parte do desafio do Bootcamp I 2025 do CEUB. [cite: 76, 77]
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>Minha Trajetória</h2>
+            <p><strong>Formação:</strong> Análise e Desenvolvimento de Sistemas - Centro Universitário de Brasília (CEUB). (2025 - 2027) [cite: 77]</p>
+            <p><strong>Experiência:</strong> Ainda não possuo experiência profissional, mas estou em busca da minha primeira oportunidade no mercado.</p>
+            <p><strong>Idiomas:</strong> Inglês (Básico a Intermediário), Espanhol (Básico).</p>
+        </div>
+        
+        <div class="section">
+            <h2>Certificações</h2>
+            <h3>Analista em Tecnologia</h3>
+            <p><em>Instituição: CFP - Centro de Formação Profissional (Carga horária: 320 horas)</em></p>
+            
+            <h3>Comunicação Oral e Escrita</h3>
+            <p><em>Instituição: Instituto Federal de Minas Gerais - IFMG (Carga horária: 30 horas)</em></p>
 
-        <h2>Habilidades e Competências</h2>
-        <p>Para uma apresentação visual das minhas principais competências, acesse o link abaixo:</p>
-        <a href="https://www.canva.com/design/DAG0Y6eLryM/adeV_VaCEf2Qg4N8ddTQYw/view" class="slide-link" target="_blank">Ver Apresentação de Habilidades</a>
-        
-        <h2>Minha Trajetória</h2>
-        <p>
-            <strong>Formação:</strong> Análise e Desenvolvimento de Sistemas - Centro Universitário de Brasília (CEUB).
-            <br>
-            <em>Início em 2025, com previsão de término em 2027.</em>
-        </p>
-        <p>
-            <strong>Experiência:</strong> Ainda não possuo experiência profissional, mas estou em busca da minha primeira oportunidade no mercado.
-        </p>
-        
-        <h3>Certificações</h3>
-        <p>
-            <strong>Analista em Tecnologia</strong>
-            <br>
-            <em>Instituição: CFP - Centro de Formação Profissional</em>
-            <br>
-            <em>Carga horária: 320 horas (Concluído em Março de 2025).</em>
-        </p>
-        <p>
-            <strong>Comunicação Oral e Escrita</strong>
-            <br>
-            <em>Instituição: Instituto Federal de Minas Gerais (IFMG)</em>
-            <br>
-            <em>Carga horária: 30 horas (Concluído em Abril de 2025).</em>
-        </p>
-        
-        <hr>
+             <h3>Big Data</h3>
+            <p><em>Instituição: Instituto Federal de Minas Gerais - IFMG (Carga horária: 30 horas)</em></p>
+        </div>
 
-        <h2>Contato</h2>
-        <p>
-            <strong>Email:</strong> gabrielsantosdemacedo10@gmail.com
-        </p>
+        <div class="section">
+            <h2>Recomendações</h2>
+            <blockquote>
+                <p>"Nenhuma recomendação adicionada no momento. Buscando oportunidades para construir referências profissionais."</p>
+            </blockquote>
+        </div>
+        
+        <div class="section">
+            <h2>Contato</h2>
+            <p><strong>Email:</strong> gabrielsantosdemacedo10@gmail.com</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gabriel-santos-de-macedo-16b40135a" target="_blank">linkedin.com/in/gabriel-santos-de-macedo</a></p>
+        </div>
     
     </div>
 
