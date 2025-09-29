@@ -10,8 +10,8 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f4f7f6; /* Um cinza bem claro para o fundo */
-            color: #333; /* Cor do texto principal (cinza escuro) */
+            background-color: #f4f7f6;
+            color: #333;
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -19,16 +19,16 @@
 
         .container {
             max-width: 900px;
-            margin: 40px auto; /* Centraliza o conteúdo */
+            margin: 40px auto;
             padding: 20px;
-            background-color: #ffffff; /* Fundo branco para o conteúdo principal */
-            border-radius: 8px; /* Bordas arredondadas */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         h1, h2, h3 {
-            color: #0056b3; /* Um tom de azul para os títulos */
-            border-bottom: 2px solid #e9ecef; /* Linha sutil abaixo dos títulos */
+            color: #0056b3;
+            border-bottom: 2px solid #e9ecef;
             padding-bottom: 10px;
         }
 
@@ -54,12 +54,12 @@
         }
         
         strong {
-            color: #004085; /* Destaque em azul mais escuro */
+            color: #004085;
         }
 
-        .video-container, .slides-container {
+        .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* Proporção de 16:9 para vídeos */
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
             height: 0;
             overflow: hidden;
             max-width: 100%;
@@ -67,20 +67,26 @@
             margin-top: 20px;
         }
 
-        .video-container iframe, .slides-container iframe {
+        .video-container iframe {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
         }
-
-        .placeholder-text {
-            text-align: center;
-            padding: 20px;
-            background-color: #e9ecef;
+        
+        .slide-link {
+            display: inline-block;
+            background-color: #0056b3;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
             border-radius: 5px;
-            color: #6c757d;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .slide-link:hover {
+            background-color: #004085;
         }
 
     </style>
@@ -96,9 +102,7 @@
 
         <h2>Apresentação em Vídeo (YouTube)</h2>
         <div class="video-container">
-            <div class="placeholder-text">
-                <p>O seu vídeo do YouTube aparecerá aqui. Siga as instruções no código para incorporá-lo.</p>
-            </div>
+            <iframe src="https://www.youtube.com/embed/y2pRpyynwDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <hr>
@@ -117,12 +121,9 @@
             Este site foi desenvolvido com HTML e CSS como parte do desafio do Bootcamp I 2025 do CEUB.
         </p>
 
-        <h2>Habilidades e Competências (Slides)</h2>
-        <div class="slides-container">
-            <div class="placeholder-text">
-                <p>Sua apresentação de slides aparecerá aqui. Siga as instruções no código para incorporá-la.</p>
-            </div>
-        </div>
+        <h2>Habilidades e Competências</h2>
+        <p>Para uma apresentação visual das minhas principais competências, acesse o link abaixo:</p>
+        <a href="https://www.canva.com/design/DAG0Y6eLryM/adeV_VaCEf2Qg4N8ddTQYw/view" class="slide-link" target="_blank">Ver Apresentação de Habilidades</a>
         
         <h2>Minha Trajetória</h2>
         <p>
