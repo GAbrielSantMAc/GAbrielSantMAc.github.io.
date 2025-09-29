@@ -4,49 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Gabriel Santos de Macedo</title>
-</head>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7f6; /* Um cinza bem claro para o fundo */
+            color: #333; /* Cor do texto principal (cinza escuro) */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto; /* Centraliza o conteúdo */
+            padding: 20px;
+            background-color: #ffffff; /* Fundo branco para o conteúdo principal */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+        }
+
+        h1, h2, h3 {
+            color: #0056b3; /* Um tom de azul para os títulos */
+            border-bottom: 2px solid #e9ecef; /* Linha sutil abaixo dos títulos */
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            border-bottom: none;
+        }
+        
+        h3 {
+            font-size: 1.2em;
+        }
+
+        p, li {
+            font-size: 1.1em;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #e9ecef;
+            margin: 30px 0;
+        }
+        
+        strong {
+            color: #004085; /* Destaque em azul mais escuro */
+        }
+
+        .video-container, .slides-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção de 16:9 para vídeos */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 20px;
+        }
+
+        .video-container iframe, .slides-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .placeholder-text {
+            text-align: center;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            color: #6c757d;
+        }
+
+    </style>
+    </head>
 <body>
 
-    <h1>Gabriel Santos de Macedo</h1>
-    <h3>Estudante de Análise e Desenvolvimento de Sistemas</h3>
+    <div class="container">
+
+        <h1>Gabriel Santos de Macedo</h1>
+        <p style="text-align: center; font-size: 1.2em; margin-top: -10px;">Estudante de Análise e Desenvolvimento de Sistemas</p>
+        
+        <hr>
+
+        <h2>Apresentação em Vídeo (YouTube)</h2>
+        <div class="video-container">
+            <div class="placeholder-text">
+                <p>O seu vídeo do YouTube aparecerá aqui. Siga as instruções no código para incorporá-lo.</p>
+            </div>
+        </div>
+
+        <hr>
+        
+        <h2>Sobre Mim</h2>
+        <p>
+            Estudo Análise e Desenvolvimento de Sistemas (ADS) no CEUB. Estou começando a curtir e a entender o básico 
+            com o foco de melhorar e ter minhas primeiras impressões sobre o mercado da área. Busco aplicar meus conhecimentos
+            e aprender continuamente.
+        </p>
+
+        <h2>Projetos</h2>
+        <h3>Meu Portfólio Digital (portfolioHUB)</h3>
+        <p>
+            Criação de uma página web profissional para apresentar minhas habilidades e trajetória acadêmica. 
+            Este site foi desenvolvido com HTML e CSS como parte do desafio do Bootcamp I 2025 do CEUB.
+        </p>
+
+        <h2>Habilidades e Competências (Slides)</h2>
+        <div class="slides-container">
+            <div class="placeholder-text">
+                <p>Sua apresentação de slides aparecerá aqui. Siga as instruções no código para incorporá-la.</p>
+            </div>
+        </div>
+        
+        <h2>Minha Trajetória</h2>
+        <p>
+            <strong>Formação:</strong> Análise e Desenvolvimento de Sistemas - Centro Universitário de Brasília (CEUB).
+            <br>
+            <em>Início em 2025, com previsão de término em 2027.</em>
+        </p>
+        <p>
+            <strong>Experiência:</strong> Ainda não possuo experiência profissional, mas estou em busca da minha primeira oportunidade no mercado.
+        </p>
+        
+        <h3>Certificações</h3>
+        <p>
+            <strong>Analista em Tecnologia</strong>
+            <br>
+            <em>Instituição: CFP - Centro de Formação Profissional</em>
+            <br>
+            <em>Carga horária: 320 horas (Concluído em Março de 2025).</em>
+        </p>
+        <p>
+            <strong>Comunicação Oral e Escrita</strong>
+            <br>
+            <em>Instituição: Instituto Federal de Minas Gerais (IFMG)</em>
+            <br>
+            <em>Carga horária: 30 horas (Concluído em Abril de 2025).</em>
+        </p>
+        
+        <hr>
+
+        <h2>Contato</h2>
+        <p>
+            <strong>Email:</strong> gabrielsantosdemacedo10@gmail.com
+        </p>
     
-    <hr>
+    </div>
 
-    <h2>Sobre Mim</h2>
-    <p>
-        Estudo Análise e Desenvolvimento de Sistemas (ADS). Estou começando a curtir e a entender o básico 
-        com o foco de melhorar e ter minhas primeiras impressões sobre o mercado da área.
-    </p>
-
-    <h2>Projetos</h2>
-    <h4>Meu Portfólio Digital</h4>
-    <p>
-        Criação de uma página web profissional para apresentar minhas habilidades e trajetória acadêmica. 
-        Este site foi desenvolvido com HTML como parte do desafio do Bootcamp I 2025 do CEUB.
-    </p>
-
-    <h2>Currículo e Habilidades</h2>
-    <p>
-        <strong>Formação:</strong> Análise e Desenvolvimento de Sistemas - Centro Universitário de Brasília (CEUB).
-        <br>
-        <em>Início em 2025, com previsão de término em 2027.</em>
-    </p>
-    <p>
-        <strong>Habilidades Técnicas:</strong> HTML (básico), CSS (básico), Banco de Dados (aprendendo), Pacote Office (Avançado).
-    </p>
-    <p>
-        <strong>Habilidades Pessoais:</strong> Sou muito comunicativo e gosto de trabalhar em equipe.
-    </p>
-     <p>
-        <strong>Experiência:</strong> Ainda não possuo experiência profissional, mas estou em busca da minha primeira oportunidade no mercado.
-    </p>
-
-    <hr>
-
-    <h2>Contato</h2>
-    <p>
-        <strong>Email:</strong> gabrielsantosdemacedo10@gmail.com
-    </p>
-    
 </body>
 </html>
